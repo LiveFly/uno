@@ -444,6 +444,7 @@ namespace SamplesApp.UITests
 			_app.TapCoordinates(appCommandBarPosition.X + xPosition, appCommandBarPosition.Y + yPosition);
 			_app.Wait(3);
 			_app.Back();
+			_app.Wait(3);
 
 			using var final = TakeScreenshot("final", ignoreInSnapshotCompare: true);
 
